@@ -7,7 +7,7 @@ const LoginForm = () => {
 
   return (
     <div className='bg-blue-950 h-[95vh] pt-20'>
-            <div className=' ml-[40%]  border border-white w-[300px] h-[290px] pt-6 pl-4 pb-8'>
+            <div className=' mx-auto  border border-white w-[300px] h-[290px] pt-6 pl-4 pb-8'>
                 <div className='py-4 '>
                     <h2 className='text-2xl text-white '>Login</h2>
                 </div>

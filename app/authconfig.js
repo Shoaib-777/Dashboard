@@ -11,7 +11,8 @@ export const authConfig = {
         if (isLoggedIn) return true;
         return false;
       } else if (isLoggedIn) {
-        return Response.redirect(new URL("/dashboard", request.nextUrl));
+        const baseURL = process.env.NEXT_BASE_URL;
+        return Response.redirect(new URL("/dashboard",baseURL));
       }
       return true;
     },

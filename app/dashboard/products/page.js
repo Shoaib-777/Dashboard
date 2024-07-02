@@ -8,7 +8,7 @@ const Products = async({searchParams}) => {
   const fpdata = await FetchProduct(q)
   const Map = fpdata.map((v,i)=>{
     return(
-      <tr key={i} className="border-b border-black">
+      <tr key={i} className="border-b border-black hover:bg-[#161b2b]">
               <td className="py-3 px-6 text-left flex items-center">
                 <Image width={40} height={40} className="w-10 h-10 rounded-full mr-3" src="/no_image.png" alt="Product" />
                 <span>{v.title}</span>
@@ -31,8 +31,8 @@ const Products = async({searchParams}) => {
     )
   })
   return (
-  <div className="mx-4 mt-[30px]  rounded-lg ">  
-    <div className="container bg-[#1f273d] rounded-xl   ">
+  <div className="mx-4 mt-[30px] rounded-lg ">  
+    <div className="w-full bg-[#1f273d] rounded-xl   ">
       <div className="mb-4 ml-4 pt-3">
         <Link href={'/dashboard/products/addproduct'}><button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow">
           Add Product

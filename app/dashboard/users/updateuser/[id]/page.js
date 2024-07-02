@@ -21,23 +21,23 @@ const Updateuser = async({params}) => {
             <label htmlFor="" className="w-[117px] mr-5  font-bold text-nowrap ">Password</label><input name="password" id="password" type="passowrd" placeholder="" className=" w-full px-4 py-2 bg-[#111523]" />
         </div>
         <div className="flex justify-center items-center mb-6">
-            <div className="w-full flex justify-center items-center">
-                <label htmlFor="" className="w-[117px] mr-5 font-bold" >Role</label>
-                <select name="role" id="role" className="bg-[#111523] px-4 py-2 w-full">
-                    <option value="client" selected >Client</option>
-                    <option value="admin">Admin</option>
-                </select>
-            </div>
-        </div>
-        <div className="w-full flex items-center mb-4">
-            <div className="flex justify-center items-center">
-                <label htmlFor="" className="w-[117px] mr-1 font-bold">Status</label>
-                <select name="status" id="status" className="bg-[#111523] px-4 py-2 w-[355px] text-center">
-                    <option value="Active" selected >Active</option>
-                    <option value="Not Active">Not Active</option>
-                </select>
-            </div>
-        </div>
+                    <div className="w-full flex justify-center items-center">
+                        <label className="w-[117px] mr-4 font-bold">Role</label>
+                        <select name="role" id="role" className="bg-[#111523] px-4 py-2 w-full text-center"> 
+                            <option value="Client" selected>Client</option>
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </div>
+                </div>
+                <div className="w-full flex justify-center items-center mb-4"> 
+                    <div className="w-full flex justify-center items-center">
+                        <label className="w-[117px] mr-4 font-bold">Status</label>
+                        <select name="status" id="status" className="bg-[#111523] px-4 py-2 w-full text-center">
+                            <option value="Active" selected>Active</option>
+                            <option value="Not Active">Not Active</option>
+                        </select>
+                    </div>
+                </div>
         <div className="w-full px-8">
             <button className="px-4 py-2 w-full font-semibold  bg-green-500 text-white rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-300">Update User</button>
         </div>
