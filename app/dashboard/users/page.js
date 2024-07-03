@@ -10,7 +10,7 @@ const Users = async ({ searchParams }) => {
         return (
             <tr key={i} className="hover:bg-[#161b2b]">
                 <td className="px-4 py-2 border-b border-gray-700 text-sm">
-                    <div className="flex items-center">
+                    <div className="flex items-center pr-6">
                         <Image src="/no_image.png" width={40} height={40} alt="Profile" className="w-10 h-10 rounded-full mr-2" />
                         <span className="text-white text-nowrap">{v.username}</span>
                     </div>
@@ -25,13 +25,13 @@ const Users = async ({ searchParams }) => {
                 </td>
                 <td className="px-4 py-2 text-sm flex space-x-2">
                     <Link href={`/dashboard/users/updateuser/${v.id}`}>
-                        <button className="px-3 py-1 text-white bg-green-500 hover:bg-green-700 rounded">
+                        <button className="px-3 py-1 mt-4 lg:mt-2 text-white bg-green-500 hover:bg-green-700 rounded">
                             Update
                         </button>
                     </Link>
                     <form action={DeleteUser}>
                         <input type="hidden" id="id" name="id" value={v._id} />
-                        <button className="px-3 py-1 text-white bg-red-500 hover:bg-red-700 rounded">
+                        <button className="px-3 py-1 mt-4 lg:mt-2 text-white bg-red-500 hover:bg-red-700 rounded">
                             Delete
                         </button>
                     </form>
