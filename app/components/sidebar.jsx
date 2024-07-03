@@ -21,7 +21,7 @@ const Sidebar = async () => {
           <form action={async () => {
           "use server"
           await signOut()
-        }}><li><FaSignOutAlt className="w-10 h-10 pl-1 text-white font-bold mb-[3rem] cursor-pointer"/></li></form>
+        }}><li><FaSignOutAlt type="submit" className="w-10 h-10 pl-1 text-white font-bold mb-[3rem] cursor-pointer"/></li></form>
         </ul>
       </div>
       {/* Other Devices */}
