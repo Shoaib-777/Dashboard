@@ -18,7 +18,7 @@ const Updateuser = async({params}) => {
             <label htmlFor="" className="w-[117px] mr-5  font-bold text-nowrap ">Email id</label><input type="email" name="email" id="email" placeholder={Suser.email} className=" w-full px-4 py-2 bg-[#111523]" />
         </div>
         <div className="flex justify-center items-center mb-6">
-            <label htmlFor="" className="w-[117px] mr-5  font-bold text-nowrap ">Password</label><input name="password" id="password" type="passowrd" placeholder="" className=" w-full px-4 py-2 bg-[#111523]" />
+            <label htmlFor="" className="w-[117px] mr-5  font-bold text-nowrap ">Password</label><input name="password" id="password" type="passowrd" readOnly  placeholder="Cannot Change Password Once Created" className=" w-full px-4 py-2 bg-[#111523]" />
         </div>
         <div className="flex justify-center items-center mb-6">
                     <div className="w-full flex justify-center items-center">
