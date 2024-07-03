@@ -18,11 +18,11 @@ const Sidebar = async () => {
           <Link href={'/dashboard'}><li><MdDashboard className="w-10 h-10 text-white font-bold mb-[3rem] hover:bg-[#1E5162] px-1 cursor-pointer"/></li></Link>
           <Link href={'/dashboard/users'}><li><FaUsers className="w-10 h-10 text-white font-bold mb-[3rem] hover:bg-[#1E5162] px-1 cursor-pointer"/></li></Link>
           <Link href={'/dashboard/products'}><li><GiShoppingBag className="w-10 h-10 text-white font-bold mb-[3rem] hover:bg-[#1E5162] px-1 cursor-pointer"/></li></Link>
+        </ul>
           <form action={async () => {
           "use server"
           await signOut()
-        }}><li><FaSignOutAlt type="submit" className="w-10 h-10 pl-1 text-white font-bold mb-[3rem] cursor-pointer"/></li></form>
-        </ul>
+        }}><button className="ml-1"><FaSignOutAlt className="w-10 h-10 ml-1 text-white font-bold mb-[3rem] cursor-pointer"/></button></form>
       </div>
       {/* Other Devices */}
       <div className="xs:hidden flex">
