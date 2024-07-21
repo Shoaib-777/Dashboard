@@ -25,6 +25,11 @@ input[type=number]::-webkit-inner-spin-button,
         -webkit-appearance: none;
         margin: 0;
     }
+.background{
+    background-image: url(https://img.freepik.com/free-photo/abstract-dark-blurred-background-smooth-gradient-texture-color-shiny-bright-website-pattern-banner-header-sidebar-graphic-art-image_1258-85524.jpg);
+  border: 2px solid black;
+  object-fit:cover;
+}
 
     /* input[type=number] {
         -moz-appearance: textfield;
