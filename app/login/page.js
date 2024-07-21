@@ -11,8 +11,8 @@ const LoginForm = () => {
 
   return ( 
    <>
-     <div className="background w-full h-full">
-            <div className="mx-auto border border-gray-200 w-[370px] h-[550px] sm:w-[400px] sm:h-[550px] px-6 mt-[1rem] rounded-lg bg-transparent mb-[3rem] ">
+     <div className="background w-full h-[100vh]">
+            <div className="mx-auto border border-gray-200 w-[370px] h-[550px] sm:w-[400px] sm:h-[550px] px-6 mt-[4rem] rounded-lg bg-transparent mb-[3rem] ">
             <form action={formAction}>
             <div className=" mt-[2rem] ">
                     <h2 className="text-center text-white font-bold text-2xl">Login</h2>
